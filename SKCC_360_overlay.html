@@ -1,0 +1,803 @@
+<!-- REMOVE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- REMOVE -->
+<style type="text/css">
+body {
+  font-family: 'Lato';
+}
+label {
+  font-weight: 300;
+  width: 100%;
+  margin-top: 10px;
+  color:#FFF;
+}
+  .internal {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .modal-wrapper {
+    width:100%;
+    height: 100%;
+    margin:0 auto;
+    display: table;
+  }
+  .modal-header h1, .modal-header h3 {
+    font-weight: 300!important;
+    margin:0 0 5px 0;
+  }
+  .modal-header img {
+    float:left;
+    width:80px;
+    height:80px;
+  }
+  .modal-header {
+    padding: 15px 0;
+    border-bottom: 1px solid #24A7DF;
+    margin-bottom:30px;
+  }
+  .modal-header-mobile {
+    display:none;
+  }
+  .dotted-line {
+    width:148px;
+    float:left;
+    margin: 17px 0 0 5px;
+    height: 6px;
+    display:block;
+  }
+  .dotted-line-mobile {
+    width:100px;
+    display:none;
+    height: 6px;
+  }
+  .tabs-line {
+    width: 73.3%;
+    height: 4px;
+    background-color: #FFF;
+    display: block;
+    float: right;
+    margin-top: 18px;
+  }
+  .nav-tabs {
+    border-bottom: none;
+    width: auto;
+    height: 30px;
+    margin: 0 0 0 263px;
+    padding:4px 0 0 0;
+    top: 143px;
+    position: absolute;
+  }
+  .nav-tabs svg {
+    width:20px;
+  }
+  .nav-tabs>li>a {
+    border:none;
+  }
+  .nav-tabs>ul>li.active>a>svg>circle {
+    fill: #F00!important;
+  }
+  .nav>li>a {
+    padding:4px;
+  }
+  .nav>li>a:hover {
+    background-color:transparent;
+    border:none;
+  }
+  .nav>li {
+    width:80px;
+    height:20px;
+    margin:0 100px 0 0;
+    text-align: center;
+  }
+  li.active>a svg {
+    fill: #FFF!important;
+  }
+  a svg:hover {
+    fill: #FFF!important;
+  }
+  a svg {
+    fill: #24A7DF!important;
+  }
+  .tab-content {
+    position:relative;
+    margin-top: 140px;
+  }
+  .tab-content img {
+  }
+  .img-label {
+    font-size: 18px;
+    float:left;
+  }
+  .img-label label {
+    width: auto;
+    margin-top:5px;
+  }
+  .img-label img {
+    margin-right:10px;
+    width:30px;
+    height:30px;
+  }
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover,
+  .nav-tabs>li.inactive>a, .nav-tabs>li.inactive>a:focus, .nav-tabs>li.inactive>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: transparent;
+    border: none;
+    border-bottom-color: transparent;
+}
+.overlay-doctors img {
+    margin:0 30px 30px 0;
+}
+.overlay-doctors p {
+    position: relative;
+    height: 30%;
+}
+.doc-img {
+    float:left;
+}
+.doc-img img {
+    width:216px;
+    height:216px;
+    float:left;
+}
+.doc-details {
+    display:block;
+        clear: both;
+}
+.doc-details ul {
+    list-style-type: none;
+    padding:0;
+    font-size: 18px;
+    margin-bottom: 5;
+}
+.doc-bio {
+    margin-left: 220px;
+    padding:0 50px;
+}
+.tab-right {
+  width:35px!important;
+}
+
+
+
+
+/******************************************************** RESPONSIVE ********************************************************/
+@media screen and (max-width:1824px) {
+  .modal-wrapper {
+    padding:0 30px;
+  }
+  .dotted-line {
+    width: 148px;
+  }
+  .tabs-line {
+    width: 73.3%;
+  }
+}
+@media screen and (max-width:1280px) {
+  .tabs-line {
+    width: 73.3%;
+  }
+}
+@media screen and (max-width:1024px) {
+  .modal-wrapper {
+    padding:0 30px;
+  }
+  .dotted-line {
+    width: 148px;
+  }
+  .tabs-line {
+    width: 72.3%;
+  }
+}
+@media screen and (max-width:960px) {
+  label {
+    margin-top: 20px;
+  }
+  .nav-tabs {
+    margin: 0 0 0 0; 
+    top: 250px;
+    left: 100px;
+  }
+  .nav-tabs svg {
+    width:50px;
+    height:50px;
+  }
+  .nav>li {
+    width: 150px;
+    width:174px;
+    height: 20px;
+    margin: 0 0 0px 64px;
+    font-size: 28px;
+  }
+  .tabs-line {
+    width: 91%;
+    margin-top: 38px;
+  }
+  .tab-content {
+    margin-top: 260px;
+  }
+  .modal-wrapper {
+    padding:0 30px;
+  }
+  .modal-header-mobile {
+    display:block;
+    border-bottom: 1px solid #24A7DF;
+    margin-bottom:20px;
+  }
+  .modal-header-mobile img {
+    float:left;
+    width:110px;
+    height:110px;
+    margin:0 10px 0 0;
+  }
+  .modal-header-mobile h1 {
+    font-size: 36px;
+    margin-bottom: 0px;
+  }
+  .modal-header-mobile h3 {
+    margin: 0px 0 30px 0;
+    font-size: 55px;
+  }
+  .img-label {
+    font-size: 40px;
+  }
+  .img-label img {
+    margin-right:10px;
+    width:70px;
+    height:70px;
+  }
+  .dotted-line {
+    display:none;
+  }
+  .dotted-line-mobile {
+    width:45px;
+    display:block;
+    margin: 0 0 0 0;
+  }
+  .dotted-line-mobile img {
+    margin-top: 36px;
+  }
+  .modal-header {
+    display:none;
+  }
+  .overlay-doctors img {
+    margin: 0 20px 30px 0;
+  }
+  .doc-details {
+    float:left;
+    clear:right;
+  }
+  .doc-img {
+    float:none;
+}
+  .doc-details ul {
+    font-size: 34px;
+    margin-bottom:0;
+  }
+  .doc-bio {
+    float:left;
+    margin-left:0px;
+    padding: 0;
+    font-size:20px;
+  }
+}
+@media screen and (max-width:853px) {
+  label {
+  margin-top: 10px;
+}
+  .nav-tabs {
+    top: 187px;
+    left:62px;
+  }
+  .nav-tabs svg {
+    width:40px;
+    height:40px;
+  }
+  .nav>li {
+    width: 125px;
+    width:155px;
+    height: 20px;
+    margin: 0 0 0px 64px;
+    font-size: 22px;
+  }
+  .tabs-line {
+    width: 89%;
+    width:91%;
+    margin-top: 18px;
+  }
+  .tab-content {
+    margin-top: 190px;
+  }
+  .modal-wrapper {
+    padding:0 30px;
+  }
+  .modal-header-mobile {
+    display:block;
+    border-bottom: 1px solid #24A7DF;
+    margin-bottom:20px;
+  }
+  .modal-header-mobile img {
+    float:left;
+    width:80px;
+    height:80px;
+    margin:0 10px 0 0;
+  }
+  .modal-header-mobile h1 {
+    font-size: 28px;
+    margin-bottom: 0px;
+  }
+  .modal-header-mobile h3 {
+    margin: 0px 0 20px 0;
+    font-size: 40px;
+  }
+  .img-label {
+    font-size: 28px;
+  }
+  .img-label img {
+    margin-right:10px;
+    width:60px;
+    height:60px;
+  }
+  .dotted-line-mobile img {
+    margin-top: 16px;
+  }
+
+  .doc-details ul {
+    font-size: 24px;
+    margin-bottom:0;
+  }
+}
+@media screen and (max-width:812px) {
+  .nav-tabs {
+    top: 187px;
+    left:78px;
+  }
+  .nav>li {
+    width:135px;
+  }
+  .doc-bio {
+    font-size:24px;
+  }
+}
+@media screen and (max-width:800px) {
+  .nav-tabs {
+    top: 187px;
+    left:68px;
+  }
+  .nav>li {
+    width:135px;
+    height: 20px;
+    margin: 0 0 0px 64px;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width:768px) {
+  .nav-tabs {
+    top: 187px;
+    left: 8px;
+  }
+  .nav>li {
+    width:144px;
+  }
+}
+@media screen and (max-width:740px) {
+  .nav-tabs {
+    top: 190px;
+    left: 45px;
+  }
+  .nav-tabs svg {
+    width:35px;
+    height:35px;
+  }
+  .nav>li {
+    width: 124px;
+    height: 20px;
+    margin: 0 0 0px 64px;
+    font-size: 18px;
+}
+  .tabs-line {
+    width: 89%;
+  }
+  .tab-content {
+    margin-top: 170px;
+  }
+  .modal-header-mobile h1 {
+    font-size: 28px;
+    margin-bottom: 0px;
+  }
+  .img-label {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width:736px) {
+  .nav-tabs {
+    top: 190px;
+    left:54px;
+  }
+  .nav-tabs svg {
+    width:35px;
+    height:35px;
+  }
+  .nav>li {
+    width:120px;
+    height: 20px;
+    margin: 0 0 0px 64px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:731px) {
+  .nav-tabs {
+    top: 190px;
+    left:48px;
+  }
+}
+@media screen and (max-width:667px) {
+  .nav-tabs {
+    top: 190px;
+    left: 48px;
+  }
+  .nav-tabs svg {
+    width:35px;
+    height:35px;
+  }
+  .nav>li {
+    width: 115px;
+    height: 20px;
+    margin: 0 0 0px 52px;
+    font-size: 15px;
+  }
+  .tabs-line {
+    width: 87%;
+  }
+  .tab-content {
+    margin-top: 150px;
+  }
+  .dotted-line-mobile img {
+    margin-top: 16px;
+  }
+  .overlay-doctors img {
+    margin: 0 20px 30px 0;
+  }
+  .doc-details ul {
+    font-size: 18px;
+    margin-bottom:4px;
+  }
+}
+@media screen and (max-width:640px) {
+  .nav-tabs {
+    top: 192px;
+    left: 42px;
+  }
+  .nav-tabs svg {
+    width:30px;
+    height:30px;
+  }
+  .nav>li {
+    width: 110px;
+    height: 20px;
+    margin: 0 0 0px 52px;
+    font-size: 15px;
+  }
+  .tab-content {
+    margin-top: 160px;
+  }
+  .doc-bio {
+    font-size:20px;
+  }
+}
+@media screen and (max-width:600px) {
+  .nav-tabs {
+    top: 192px;
+    left:18px;
+  }
+  .nav>li {
+    width: 104px;
+    height: 20px;
+    margin: 0 0 0px 52px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width:568px) {
+  .nav-tabs {
+    top: 194px;
+    left:20px;
+  }
+  .nav-tabs svg {
+    width:25px;
+    height:25px;
+  }
+  .nav>li {
+    width: 110px;
+    height: 20px;
+    margin: 0 0 0px 40px;
+    font-size: 15px;
+  }
+  .doc-bio {
+    font-size:20px;
+  }
+}
+@media screen and (max-width:480px) {
+  .nav-tabs {
+    top: 194px;
+    left:30px;
+  }
+  .nav-tabs svg {
+    width:25px;
+    height:25px;
+  }
+  .nav>li {
+    width:95px;
+    height: 20px;
+    margin: 0 0 0px 27px;
+    font-size: 15px;
+  }
+  
+}
+@media screen and (max-width:414px) {
+  .nav-tabs {
+    top: 128px;
+    left:35px;
+  }
+  .nav-tabs svg {
+    width:20px;
+    height:20px;
+  }
+  .nav>li {
+    width:94px;
+    margin:0 0 0 11px;
+    font-size: 12px;
+  }
+  .tab-content {
+    margin-top: 120px;
+  }
+  .modal-header-mobile {
+    margin-bottom:10px;
+  }
+  .modal-header-mobile img {
+    width:50px;
+    height:50px;
+    margin:0 10px 0 0;
+  }
+  .modal-header-mobile h1 {
+    font-size: 18px;
+  }
+  .modal-header-mobile h3 {
+    margin: 0px 0 10px 0;
+    font-size: 24px;
+  }
+  .img-label {
+    font-size: 18px;
+  }
+  .img-label img {
+    margin-right:10px;
+    width:40px;
+    height:40px;
+  }
+  .dotted-line-mobile {
+    width:40px;
+  }
+  .doc-img img {
+    width: 136px;
+    height: 136px;
+    float: left;
+  }
+  .doc-details ul {
+    font-size: 14px;
+    margin-bottom:0px;
+  }
+  .doc-bio {
+    font-size:16px;
+  }
+}
+@media screen and (max-width:411px) {
+  .nav-tabs {
+    top: 128px;
+    left:32px;
+  }
+  .nav>li {
+    width:95px;
+    margin:0 0 0 10px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width:375px) {
+  .tab-content {
+    margin-top: 120px;
+  }
+  .nav-tabs {
+    top: 128px;
+    left:35px;
+  }
+  .nav>li {
+    width: 88px;
+    margin: 0 3px 0 3px;
+  }
+}
+@media screen and (max-width:360px) {
+  .nav-tabs {
+    left: 42px;
+  }
+  .nav>li {
+    width:80px;
+  }
+  .tabs-line {
+    width: 80%;
+  }
+}
+@media screen and (max-width:320px) {
+  .nav>li {
+    width:68px;
+  }
+}
+</style>
+
+<div class=" modal-wrapper" style="background-color: #000; color: #FFF">
+<div class="internal">
+  <div class="modal-header">
+    <img src="assets/icon-360.svg" alt="">
+    <h1>MY CANCER CARE <strong>360 PATH</strong></h1>
+    <h3>Everyhting you need, in one place, for hope to thrive.</h3>
+  </div>
+  <div class="modal-header-mobile">
+    <img src="assets/icon-360.svg" alt="">
+    <h1>MY CANCER CARE</h1>
+    <h3><strong>360 Path</strong></h3>
+  </div>
+  <div class="img-label"><img src="assets/icon-prostate.svg" alt=""><label>Prostate</label></div>
+  <div class="dotted-line"><img src="assets/graphic-dotted-line.svg" alt=""></div>
+  <div class="dotted-line-mobile"><img src="assets/graphic-dotted-line-mobile.svg" alt=""></div>
+  <div class="tabs-line"></div>
+  <ul class="nav nav-tabs">
+    <li class="active">
+      <a href="#home">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle  cx="50" cy="50" r="50" w="60" />
+        </svg>
+        <label>DOCTORS</label>
+      </a>
+    </li>
+    <li>
+      <a href="#menu1">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="50"/>
+        </svg>
+        <label>PROGRAMS</label>
+      </a>
+      
+    </li>
+    <li>
+      <a href="#menu2">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="50"/>
+        </svg> 
+        <label>EVENTS</label>
+      </a>
+    </li>
+    <li class="tab-right">
+      <a href="#menu3">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="50"/>
+        </svg>
+        <label>FAQ</label>
+      </a>
+    </li>
+  </ul>
+
+  <div class="tab-content overlay-doctors">
+    <div id="home" class="tab-pane fade in active">
+      <div class="doc-img">
+        <img src="assets/image-doctor-prostate.jpg">
+          <div class="doc-details">
+            <ul>
+              <li><strong>Physician Name</strong></li>
+            </ul>
+            <ul>
+              <li>Specialty</li>
+            </ul>
+            <ul>
+              <li>Location</li>
+            </ul>
+          </div>
+      </div>
+      <div class="doc-bio">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+      
+  <!-- </div> -->
+    <div id="menu1" class="tab-pane fade">
+      <div class="doc-img">
+        <img src="assets/icon-programs.svg">
+          <div class="doc-details">
+            <ul>
+              <li><strong>Physician Name</strong></li>
+            </ul>
+            <ul>
+              <li>Specialty</li>
+            </ul>
+            <ul>
+              <li>Location</li>
+            </ul>
+          </div>
+      </div>
+      <div class="doc-bio">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <div class="doc-img">
+        <img src="assets/icon-events.svg">
+          <div class="doc-details">
+            <ul>
+              <li><strong>Physician Name</strong></li>
+            </ul>https://www.jeffersonhealth.org/
+            <ul>
+              <li>Specialty</li>
+            </ul>
+            <ul>
+              <li>Location</li>
+            </ul>
+          </div>
+      </div>
+      <div class="doc-bio">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <div class="doc-img">
+        <img src="assets/icon-FAQ.svg">
+          <div class="doc-details">
+            <ul>
+              <li><strong>Physician Name</strong></li>
+            </ul>
+            <ul>
+              <li>Specialty</li>
+            </ul>
+            <ul>
+              <li>Location</li>
+            </ul>
+          </div>
+      </div>
+      <div class="doc-bio">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
+});
+</script>
