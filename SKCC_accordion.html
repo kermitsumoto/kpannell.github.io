@@ -61,20 +61,20 @@ a.show-more  {text-decoration: none;color:#999;
 	</a>
 </div>
 <script type="text/javascript">
-$(document).ready(function($) {
+// $(document).ready(function($) {
 	$('.show-more').click(function() {
      if($(this).find('.show-more-snippet').css('height') != '14px'){
-        $(this).find('.show-more-snippet').stop().animate({height: '14px'}, 200);
+//         $(this).find('.show-more-snippet').stop().animate({height: '14px'}, 200);
         $(this).find('.show-more-snippet').toggleClass('no-ellipsis');
         $(this).find('img').toggleClass('arrow-flip');
     }else{
-        $(this).find('.show-more-snippet').css({height:'auto'});
-        var xx = $(this).find('.show-more-snippet').height();
-        $(this).find('.show-more-snippet').stop().animate({height: xx}, 400);
+//         $(this).find('.show-more-snippet').css({height:'auto'});
+//         var xx = $(this).find('.show-more-snippet').height();
+//         $(this).find('.show-more-snippet').stop().animate({height: xx}, 400);
         $(this).find('.show-more-snippet').toggleClass('no-ellipsis');
         $(this).find('img').toggleClass('arrow-flip');
     }
 	});
-});
+// });
 </script>
 
