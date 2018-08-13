@@ -1,0 +1,80 @@
+<!-- REMOVE -->
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<!-- REMOVE -->
+
+
+<style type="text/css">
+.accordion-item {
+	text-align:center;
+}
+
+.show-more-snippet {height:14px;width:300px;line-height:14px;font-size:14px;overflow:hidden;margin: 0 auto;white-space: nowrap;text-overflow: ellipsis;
+}
+.no-ellipsis {
+	white-space: normal;
+	overflow:visible;
+	height:auto!important;
+}
+a.show-more  {text-decoration: none;color:#999;
+}
+.show-more img {width:20px;height:10px;
+}
+.arrow-flip {-webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);transform: rotate(180deg);
+}
+</style>
+<div class="accordion-item">
+	<a href="#" class="show-more">
+		<strong>Cancer Cell Biology & Signaling</strong>
+			<div class="show-more-snippet">
+    			<span>
+    				This is the first line of the description and this should be the rest of the description text. This portion of text line falls to a third line.
+    			</span>
+			</div>
+		<img src="assets/graphic-accordion-arrow.svg">
+	</a>
+</div>
+<div class="accordion-item">
+	<a href="#" class="show-more">
+		<strong>Cancer Cell Biology & Signaling</strong>
+			<div class="show-more-snippet">
+    			<span>
+    				This is the first line of the description and this should be the rest of the description text. This portion of text line falls to a third line. This text will then fall to a fourth line. And then this portion of text will fall to a decisive 5th line.
+    			</span>
+			</div>
+		<img src="assets/graphic-accordion-arrow.svg">
+	</a>
+</div>
+<div class="accordion-item">
+	<a href="#" class="show-more">
+		<strong>Cancer Cell Biology & Signaling</strong>
+			<div class="show-more-snippet">
+    			<span>
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    			</span>
+			</div>
+		<img src="assets/graphic-accordion-arrow.svg">
+	</a>
+</div>
+<script type="text/javascript">
+$(document).ready(function($) {
+	$('.show-more').click(function() {
+     if($(this).find('.show-more-snippet').css('height') != '14px'){
+        $(this).find('.show-more-snippet').stop().animate({height: '14px'}, 200);
+        $(this).find('.show-more-snippet').toggleClass('no-ellipsis');
+        $(this).find('img').toggleClass('arrow-flip');
+    }else{
+        $(this).find('.show-more-snippet').css({height:'auto'});
+        var xx = $(this).find('.show-more-snippet').height();
+        $(this).find('.show-more-snippet').stop().animate({height: xx}, 400);
+        $(this).find('.show-more-snippet').toggleClass('no-ellipsis');
+        $(this).find('img').toggleClass('arrow-flip');
+    }
+	});
+});
+</script>
+
